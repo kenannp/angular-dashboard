@@ -14,5 +14,23 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  background: black;
+  color: darkorange;
 }
 
+mat-icon{
+  color: darkorange;
+}
+
+.nav-text{
+  padding-left: 7px;
+}
+
+.logo{
+
+  height: 30px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  
+}
