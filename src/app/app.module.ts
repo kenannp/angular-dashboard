@@ -16,6 +16,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { OverviewComponent } from './overview/overview.component';
+import { CardOneComponent } from './dashboard/cards/card-one/card-one.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { OverviewComponent } from './overview/overview.component';
     AppComponent,
     DashboardComponent,
     NavigationComponent,
-    routingComponents
+    routingComponents,
+    CardOneComponent
     
   ],
   imports: [
