@@ -19,6 +19,7 @@ import { OverviewComponent } from './overview/overview.component';
 import { CardOneComponent } from './dashboard/cards/card-one/card-one.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { CardTwoComponent } from './dashboard/cards/card-two/card-two.component';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { CardTwoComponent } from './dashboard/cards/card-two/card-two.component'
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatRadioModule
+    MatRadioModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,7 +2,7 @@
     <mat-card-header>
         <mat-card-title>
 
-            TEST-TITLE
+
             <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
                 <mat-icon>more_vert</mat-icon>
             </button>
@@ -20,7 +20,13 @@
             <mat-radio-button value="3">Invoice</mat-radio-button>
         </mat-radio-group>
 
-
-       
+        <form class="example-form"><br><br>
+                <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Quick Search </mat-label>
+                  <input matInput placeholder="Example vehicle" value="Vehicle">
+                </mat-form-field>
+        
+            </form>
+          
     </mat-card-content>
 </mat-card>
