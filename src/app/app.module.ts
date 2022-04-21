@@ -17,6 +17,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { OverviewComponent } from './overview/overview.component';
 import { CardOneComponent } from './dashboard/cards/card-one/card-one.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { CardTwoComponent } from './dashboard/cards/card-two/card-two.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { CardOneComponent } from './dashboard/cards/card-one/card-one.component'
     DashboardComponent,
     NavigationComponent,
     routingComponents,
-    CardOneComponent
+    CardOneComponent,
+    CardTwoComponent
+    
     
   ],
   imports: [
@@ -40,7 +44,8 @@ import { CardOneComponent } from './dashboard/cards/card-one/card-one.component'
     LayoutModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

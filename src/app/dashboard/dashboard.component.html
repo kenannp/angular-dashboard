@@ -4,11 +4,15 @@
     <mat-grid-tile [colspan]="2" [rowspan]="1">
       <app-card-one></app-card-one>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="1">
-      <app-card-one></app-card-one>
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+      <app-card-two></app-card-two>
     </mat-grid-tile>
     <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="1">
       <app-card-one></app-card-one>
     </mat-grid-tile>
+    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="1">
+        <app-card-one></app-card-one>
+      </mat-grid-tile>
   </mat-grid-list>
+  
 </div>
