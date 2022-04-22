@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import ScreenState from "../../models/ScreenState";
 import {BreakpointObserver, Breakpoints, BreakpointState} from "@angular/cdk/layout";
 import {map} from "rxjs/operators";
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-dashboard',
@@ -27,5 +28,9 @@ export class DashboardComponent {
       return 2
   }
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  goBack(): void {
+    this.location.back();
+  }
+
+  constructor(private breakpointObserver: BreakpointObserver, private location: Location) {}
 }

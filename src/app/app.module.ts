@@ -20,6 +20,8 @@ import { CardOneComponent } from './dashboard/cards/card-one/card-one.component'
 import {MatRadioModule} from '@angular/material/radio';
 import { CardTwoComponent } from './dashboard/cards/card-two/card-two.component';
 import {MatInputModule} from '@angular/material/input';
+import { CardThreeComponent } from './dashboard/cards/card-three/card-three.component';
+import { CardFourComponent } from './dashboard/cards/card-four/card-four.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import {MatInputModule} from '@angular/material/input';
     NavigationComponent,
     routingComponents,
     CardOneComponent,
-    CardTwoComponent
+    CardTwoComponent,
+    CardThreeComponent,
+    CardFourComponent
     
     
   ],
