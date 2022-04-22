@@ -15,17 +15,15 @@
   <mat-card-content class="dashboard-card-content">
 
 
-    <div>
-      <br>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
-      <a href="url">Link</a>
-    </div>
-
-    <div>
-      <br>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
-      <a href="url">Link</a>
-    </div>
+    <table>
+      <tr>
+        <td>
+          <ngx-charts-pie-grid [results]="products" [view]= "view" [scheme]="colorScheme">
+            
+          </ngx-charts-pie-grid>
+        </td>
+      </tr>
+    </table>
 
   </mat-card-content>
 </mat-card>

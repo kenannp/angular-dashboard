@@ -22,6 +22,7 @@ import { CardTwoComponent } from './dashboard/cards/card-two/card-two.component'
 import {MatInputModule} from '@angular/material/input';
 import { CardThreeComponent } from './dashboard/cards/card-three/card-three.component';
 import { CardFourComponent } from './dashboard/cards/card-four/card-four.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { CardFourComponent } from './dashboard/cards/card-four/card-four.compone
     MatSidenavModule,
     MatListModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

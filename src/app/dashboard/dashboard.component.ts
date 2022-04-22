@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import ScreenState from "../../models/ScreenState";
+import  ScreenState  from "../../models/ScreenState";
 import {BreakpointObserver, Breakpoints, BreakpointState} from "@angular/cdk/layout";
 import {map} from "rxjs/operators";
 import { Location } from '@angular/common';

@@ -1,17 +1,17 @@
 <div class="grid-container">
     <button class="button-color" type="button" (click)="goBack()">Back</button>
   <h1 class="mat-h1">Transaction Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
+  <mat-grid-list cols="2" rowHeight="90px">
+    <mat-grid-tile [colspan]="2" [rowspan]="2">
       <app-card-one></app-card-one>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="2" [rowspan]="1">
+    <mat-grid-tile [colspan]="2" [rowspan]="4">
       <app-card-two></app-card-two>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="1">
+    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="4">
       <app-card-three></app-card-three>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="1">
+    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="4">
         <app-card-four></app-card-four>
       </mat-grid-tile>
   </mat-grid-list>
