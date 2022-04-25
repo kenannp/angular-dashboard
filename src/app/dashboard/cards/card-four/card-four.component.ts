@@ -15,9 +15,10 @@ interface ListItem {name: string, dno: string, completed: boolean,  entrydate?: 
 export class CardFourComponent implements OnInit {
 
   list: ListItem[] = [{name: 'test', dno:'234234', completed: true, entrydate: '22.04.2022',  amount: 3000}, 
-  {name: 'test2', dno:'234234', completed: true}, 
-  {name: 'test3', dno:'234234', completed: true}, 
-  {name: 'test4', dno:'234234', completed: true}] 
+  {name: 'test2', dno:'254664', completed: true, entrydate: '12.04.2022', amount: 4000}, 
+  {name: 'test3', dno:'304734', completed: true, entrydate: '20.04.2022', amount: 5000}, 
+  {name: 'test4', dno:'400055', completed: true, entrydate: '28.04.2022', amount: 2000}] 
+
   constructor() { }
 
   ngOnInit(): void {

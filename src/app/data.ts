@@ -1,4 +1,4 @@
-export var products = [
+export var single = [
     {
       "name": "Germany",
       "value": 40632,

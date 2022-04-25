@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import  { products } from '../../../../models/products';
+import  { single } from '../../../data';
 import { Color, ScaleType } from '@swimlane/ngx-charts';
 
 
@@ -10,7 +10,7 @@ import { Color, ScaleType } from '@swimlane/ngx-charts';
 })
 export class CardThreeComponent implements OnInit {
 
-  products: any[] = products
+  single: any[] = single
   view: [number, number] = [700, 250];
   
   colorScheme: Color = {
