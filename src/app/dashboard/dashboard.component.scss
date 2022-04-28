@@ -5,5 +5,15 @@
 .button-color {
 border-color: black;
 background-color: orange;
-cursor: pointer;
+color: black;
+}
+
+.button-look {
+  border-color: orange;
+  background-color: white;
+  color: black;
+  margin: 50px;
+  padding: 50px;
+  cursor: pointer;
+
 }

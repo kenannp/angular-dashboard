@@ -21,9 +21,9 @@
         
 
         <div class="grid-container">
-          <div class="entrydate">EntryDate: <b>{{Listitem.entrydate}}</b></div>
           <div class="name"><b>Name: {{Listitem.name}}</b></div>
           <div class="dnumber">D9 No: <b>{{Listitem.dno}}</b></div>
+          <div class="entrydate">EntryDate: <b>{{Listitem.entrydate}}</b></div>
           <div class="amount"> Amount: <b>{{Listitem.amount}} </b></div>
           <div class="completed">
             <span [ngClass]="Listitem.completed ? 'dot-green' : 'dot-red' "></span> Completed: {{Listitem.completed}} </div>

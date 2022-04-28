@@ -25,6 +25,7 @@ import { CardFourComponent } from './dashboard/cards/card-four/card-four.compone
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import {MatMomentDateModule} from "@angular/material-moment-adapter";
 
 @NgModule({
   declarations: [
@@ -36,9 +37,9 @@ import {MatNativeDateModule} from '@angular/material/core';
     CardTwoComponent,
     CardThreeComponent,
     CardFourComponent
-    
-    
-    
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -57,6 +58,7 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatInputModule,
     NgxChartsModule,
     MatDatepickerModule,
+    MatMomentDateModule,
     MatNativeDateModule
   ],
   providers: [],
