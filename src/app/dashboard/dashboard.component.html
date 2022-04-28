@@ -1,10 +1,8 @@
 <div class="grid-container">
-  <button class="button-color" type="button" (click)="goBack()">Back</button>
+  <button class="button-color" type="button" (click)="goBack()"><span class="material-icons">arrow_back</span>Back</button>
   <h1 class="mat-h1">Transaction Dashboard</h1>
 
-  <div class="container">
-
-  </div>
+ 
 
   <mat-grid-list cols="2" rowHeight="90px">
     <mat-grid-tile [colspan]="2" [rowspan]="2">
@@ -15,27 +13,29 @@
     </mat-grid-tile>
     
    
-    <mat-grid-tile [colspan]="getRowsByScreenState()">
-        <button class="button-look" mat-flat-button color="primary">Primary</button>
-        <button class="button-look" mat-flat-button color="primary">Primary</button>
-        <button class="button-look" mat-flat-button color="primary">Primary</button>
-
+    <mat-grid-tile id="buttons" [colspan]="getRowsByScreenState()">
+      <div style="left: 15px !important;" >
+        <button class="button-look" ><span class="material-icons">add_circle_outline</span>Start New Delivery Receipt </button>
+        <button class="button-look" ><span class="material-icons">add_circle_outline</span>Start New Return</button>
+        <button class="button-look" ><span class="material-icons">add_circle_outline</span>Edit Saved Receipt</button>
+      </div>
     </mat-grid-tile>
     
     
    
-    <mat-grid-tile [colspan]="getRowsByScreenState()">
-        <mat-form-field appearance="fill">
+    <mat-grid-tile id="datepicker" [colspan]="getRowsByScreenState()" >
+      
+        <mat-form-field appearance="fill" style="right: 15px !important">
             <mat-label>Enter a date range</mat-label>
             <mat-date-range-input [rangePicker]="picker">
               <input matStartDate placeholder="Start date">
               <input matEndDate placeholder="End date">
             </mat-date-range-input>
-            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-hint>DD/MM/YYYY – DD/MM/YYYY</mat-hint>
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-date-range-picker #picker></mat-date-range-picker>
           </mat-form-field>
-
+        
 
     </mat-grid-tile>
 

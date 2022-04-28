@@ -3,17 +3,25 @@
 }
 
 .button-color {
-border-color: black;
-background-color: orange;
+border: none;
+background-color: #fafafa;
 color: black;
 }
 
 .button-look {
-  border-color: orange;
+  border: 1px solid orange;
+  margin-right: 100px;
+  border-radius: 25px;
+  padding: 15px;
   background-color: white;
   color: black;
-  margin: 50px;
-  padding: 50px;
   cursor: pointer;
 
 }
+
+.button-look >span {
+  color: orange;
+  vertical-align: middle;
+
+}
+
