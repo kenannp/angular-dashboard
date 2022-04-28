@@ -1,7 +1,8 @@
 <mat-card class="dashboard-card">
   <mat-card-header>
+    
     <mat-card-title>
-
+      
       DR List
       <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
         <mat-icon>more_vert</mat-icon>
@@ -14,29 +15,28 @@
   </mat-card-header>
   <mat-card-content class="dashboard-card-content">
 
-    <mat-list role="list">
+    <mat-list role="list" style="margin-top: 20px">
 
-      <mat-list-item *ngFor = " let Listitem of list" role="listitem">
-        <div>
-          Name: {{Listitem.name}}
+      <mat-list-item *ngFor=" let Listitem of list" role="listitem" style="height: 120px">
+        
 
+        <div class="grid-container">
+          <div class="entrydate">EntryDate: <b>{{Listitem.entrydate}}</b></div>
+          <div class="name"><b>Name: {{Listitem.name}}</b></div>
+          <div class="dnumber">D9 No: <b>{{Listitem.dno}}</b></div>
+          <div class="amount"> Amount: <b>{{Listitem.amount}} </b></div>
+          <div class="completed">
+            <span [ngClass]="Listitem.completed ? 'dot-green' : 'dot-red' "></span> Completed: {{Listitem.completed}} </div>
+          <div class="return">
+            <mat-icon>keyboard_return</mat-icon>
+          </div>
+          <div class="print">
+             <mat-icon>print</mat-icon> 
+          </div>
         </div>
-        <div>
-          D9 No: {{Listitem.dno}}
-
-        </div>
-        <div>
-          Completed: {{Listitem.completed}} 
-
-        </div>
-        <div>
-          EntryDate: {{Listitem.entrydate}}
-
-        </div>
-        <div>
-          Amount: {{Listitem.amount}}
-
-        </div>
+       
+          
+         
 
 
       </mat-list-item>

@@ -23,7 +23,8 @@ import {MatInputModule} from '@angular/material/input';
 import { CardThreeComponent } from './dashboard/cards/card-three/card-three.component';
 import { CardFourComponent } from './dashboard/cards/card-four/card-four.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     CardTwoComponent,
     CardThreeComponent,
     CardFourComponent
+    
     
     
   ],
@@ -53,7 +55,9 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     MatListModule,
     MatRadioModule,
     MatInputModule,
-    NgxChartsModule
+    NgxChartsModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

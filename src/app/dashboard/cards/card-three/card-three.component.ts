@@ -11,7 +11,11 @@ import { Color, ScaleType } from '@swimlane/ngx-charts';
 export class CardThreeComponent implements OnInit {
 
   single: any[] = single
-  view: [number, number] = [700, 250];
+  view = void 0;
+  @ViewChild('chart') chartReference: any
+
+  width:undefined
+  height=250
   
   colorScheme: Color = {
       name: 'myScheme',
@@ -41,9 +45,14 @@ export class CardThreeComponent implements OnInit {
   roundEdges: boolean = false;
   
 
+
   constructor() { }
 
   ngOnInit(): void {
+    //@ts-ignore
+    this.view =undefined
   }
+
+ 
 
 }

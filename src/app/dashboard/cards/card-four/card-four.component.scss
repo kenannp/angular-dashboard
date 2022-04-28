@@ -15,4 +15,60 @@
   .dashboard-card-content {
     text-align: left;
     }
+
+    
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+    'name dnumber completed file print '
+    'entrydate amount completed file print';
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid lightgray;
+    width: 720px;
+    }.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1px 0;
+    font-size: 16px;
+    }
+    .dot-green {
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    }
+    
+    .dot-red {
+      text-align: center;
+      height: 25px;
+      width: 25px;
+      background-color: red;
+      border-radius: 50%;
+      display: inline-block;
+      }
+    
+    .name { grid-area: name; }
+    .dnumber { grid-area: dnumber; }
+    .entrydate { grid-area: entrydate; }
+    .amount {grid-area: amount}
+    .completed {grid-area: completed}
+    .file {grid-area: file}
+    .print {grid-area: print}
+    
+    
+    .return {
+
+      margin-top: 38px;
+
+    }
+    .example-events {
+      height: 200px;
+      border: 1px solid #555;
+      overflow: auto;
+    }
     

@@ -12,18 +12,16 @@
       </mat-menu>
     </mat-card-title>
   </mat-card-header>
-  <mat-card-content class="dashboard-card-content">
+  <mat-card-content class="dashboard-card-content" #container>
 
 
-    <table>
-      <tr>
-        <td>
-          <ngx-charts-pie-grid [results]="single" [view]= "view" [scheme]="colorScheme">
+    
+        
+          <ngx-charts-pie-grid #chart [minWidth]="container.offsetWidth/5"  [results]="single" [view]="[container.offsetWidth, container.offsetHeight/5]" [scheme]="colorScheme">
             
           </ngx-charts-pie-grid>
-        </td>
-      </tr>
-    </table>
+        
+    
 
   </mat-card-content>
 </mat-card>

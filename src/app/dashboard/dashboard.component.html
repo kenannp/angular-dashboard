@@ -1,6 +1,11 @@
 <div class="grid-container">
-    <button class="button-color" type="button" (click)="goBack()">Back</button>
+  <button class="button-color" type="button" (click)="goBack()">Back</button>
   <h1 class="mat-h1">Transaction Dashboard</h1>
+
+  <div class="container">
+    
+  </div>
+
   <mat-grid-list cols="2" rowHeight="90px">
     <mat-grid-tile [colspan]="2" [rowspan]="2">
       <app-card-one></app-card-one>
@@ -8,12 +13,37 @@
     <mat-grid-tile [colspan]="2" [rowspan]="4">
       <app-card-two></app-card-two>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="4">
+    
+   
+    <mat-grid-tile [colspan]="getRowsByScreenState()">
+        <button mat-flat-button color="primary">Primary</button>
+        <button mat-flat-button color="primary">Primary</button>
+        <button mat-flat-button color="primary">Primary</button>
+
+    </mat-grid-tile>
+    
+    
+   
+    <mat-grid-tile [colspan]="getRowsByScreenState()">
+      <mat-form-field appearance="fill">
+        <mat-label>Input and change events</mat-label>
+        <input matInput [matDatepicker]="picker">
+
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="7">
       <app-card-three></app-card-three>
     </mat-grid-tile>
-    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="4">
-        <app-card-four></app-card-four>
-      </mat-grid-tile>
+    <mat-grid-tile [colspan]="getRowsByScreenState()" [rowspan]="7">
+      <app-card-four></app-card-four>
+    </mat-grid-tile>
   </mat-grid-list>
-  
+
 </div>

@@ -1,44 +1,38 @@
 export var single = [
     {
-      "name": "Germany",
+      "name": "Completed",
       "value": 40632,
       "extra": {
         "code": "de"
       }
     },
     {
-      "name": "United States",
+      "name": "Error",
       "value": 50000,
       "extra": {
         "code": "us"
       }
     },
     {
-      "name": "France",
+      "name": "Submitted",
       "value": 36745,
       "extra": {
         "code": "fr"
       }
     },
     {
-      "name": "United Kingdom",
+      "name": "In Process",
       "value": 36240,
       "extra": {
         "code": "uk"
       }
     },
     {
-      "name": "Spain",
+      "name": "Saved",
       "value": 33000,
       "extra": {
         "code": "es"
       }
-    },
-    {
-      "name": "Italy",
-      "value": 35800,
-      "extra": {
-        "code": "it"
-      }
     }
+    
   ]
