@@ -3,13 +3,14 @@
 }
 
 .button-color {
-border: none;
-background-color: #fafafa;
-color: black;
-cursor: pointer;
->span {
-  vertical-align: middle;
-}
+  border: none;
+  background-color: #fafafa;
+  color: black;
+  cursor: pointer;
+
+  >span {
+    vertical-align: middle;
+  }
 
 }
 
@@ -24,10 +25,8 @@ cursor: pointer;
 
 }
 
-.button-look >span {
+.button-look>span {
   color: orange;
   vertical-align: middle;
 
 }
-
-

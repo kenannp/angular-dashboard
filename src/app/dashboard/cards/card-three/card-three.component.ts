@@ -53,6 +53,8 @@ export class CardThreeComponent implements OnInit {
     this.view =undefined
   }
 
+  
+
  
 
 }

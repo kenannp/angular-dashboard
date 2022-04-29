@@ -1,8 +1,8 @@
 <mat-card class="dashboard-card">
   <mat-card-header>
-    
+
     <mat-card-title>
-      
+
       DR List
       <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
         <mat-icon>more_vert</mat-icon>
@@ -18,7 +18,7 @@
     <mat-list role="list" style="margin-top: 20px">
 
       <mat-list-item *ngFor=" let Listitem of list" role="listitem" style="height: 120px">
-        
+
 
         <div class="grid-container" [ngClass]="'status-' + getStatusString(Listitem.status)">
           <div class="name"><b>Name: {{Listitem.name}}</b></div>
@@ -32,12 +32,12 @@
             <mat-icon>keyboard_return</mat-icon>
           </div>
           <div class="print">
-             <mat-icon>print</mat-icon> 
+            <mat-icon>print</mat-icon>
           </div>
         </div>
-       
-          
-         
+
+
+
 
 
       </mat-list-item>

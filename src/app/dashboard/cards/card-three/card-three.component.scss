@@ -1,17 +1,42 @@
 .dashboard-card {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-  }
-  
-  .more-button {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-  }
-  
-  .dashboard-card-content {
-    text-align: left;
-    }
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: left;
+}
+
+.button-look {
+  border: 1px solid orange;
+  margin-right: 100px;
+  border-radius: 25px;
+  padding: 15px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  width: 300px;
+
+}
+
+.button-look>span {
+  color: orange;
+  vertical-align: middle;
+
+}
+
+
+.flexbox {
+	display: flex; 
+	flex-direction: column; 
+	justify-content:center;
+}

@@ -17,11 +17,13 @@
 
     
         
-          <ngx-charts-pie-grid #chart [minWidth]="container.offsetWidth/5"  [results]="single" [view]="[container.offsetWidth, container.offsetHeight/5]" [scheme]="colorScheme">
+          <ngx-charts-pie-grid #chart [minWidth]="container.offsetWidth/5"  [results]="single" [view]="[container.offsetWidth, 0]" [scheme]="colorScheme">
             
           </ngx-charts-pie-grid>
         
-    
 
+          <button class="button-look">
+            <span class="material-icons">add_circle_outline</span>Start New Delivery Receipt </button>
+     
   </mat-card-content>
 </mat-card>
