@@ -1,10 +1,12 @@
+@import 'app/dashboard/global-vars';
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Times New Roman', Times, serif; }
-a {color: #FFA500}
-.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle { border-color: #FFA500}
-.mat-radio-button.mat-accent .mat-radio-inner-circle {background-color: #FFA500; border-color: #FFA500}
+a {color: $orange}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle { border-color: $orange}
+.mat-radio-button.mat-accent .mat-radio-inner-circle {background-color: $orange; border-color: $orange}
+.mat-datepicker-toggle-default-icon path {fill: $orange}
 #datepicker > div {
     justify-content: flex-end !important ;
     align-items: flex-end !important;

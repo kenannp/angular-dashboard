@@ -1,3 +1,5 @@
+@import '../../global-vars.scss';
+
 .dashboard-card {
     position: absolute;
     top: 15px;
@@ -20,42 +22,74 @@
     .grid-container {
     display: grid;
     grid-template-areas:
-    'name dnumber completed file print '
-    'entrydate amount completed file print';
+    'name dnumber status file print '
+    'entrydate amount status file print';
     gap: 1px;
     background-color: white;
     padding: 10px;
     align-items: center;
     border: 1px solid lightgray;
+    border-radius: 12px;
     width: 720px;
     }.grid-container > div {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1px 0;
     font-size: 16px;
     }
-    .dot-green {
-    text-align: center;
-    height: 25px;
-    width: 25px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-block;
-    }
     
-    .dot-red {
-      text-align: center;
-      height: 25px;
-      width: 25px;
-      background-color: red;
+    .dot {
+      // text-align: center;
+      height: 1.2em;
+      width: 1.2em;
+      background-color: gray;
       border-radius: 50%;
-      display: inline-block;
-      }
+      display: block;
+      float: left;
+      margin-right: .3em;
+    }
+
     
+
+    .status-completed {
+      .status {
+        color: $status_completed;
+      }
+      .dot {
+        background: $status_completed;
+      }
+    }
+
+    .status-submitted {
+      .status{
+        color: $orange;
+      }
+      .dot {
+        background-color: $orange;
+      }
+    }
+    .status-saved {
+      .status{
+        color: gray;
+      }
+    }
+    .status-error {
+      .status{
+        color: $status_error;
+      }
+      .dot {
+        background-color: $status_error;
+      }
+    }
+
     .name { grid-area: name; }
     .dnumber { grid-area: dnumber; }
     .entrydate { grid-area: entrydate; }
     .amount {grid-area: amount}
-    .completed {grid-area: completed}
+    .status {
+      width: 115px;
+      grid-area: status;
+      line-height: 1.2em;
+    }
     .file {grid-area: file}
     .print {grid-area: print}
     
@@ -70,4 +104,15 @@
       border: 1px solid #555;
       overflow: auto;
     }
-    
+
+.print {
+  .mat-icon {
+    color: $orange;
+  }
+}
+
+.return {
+  .mat-icon {
+    color: $orange;
+  }
+}

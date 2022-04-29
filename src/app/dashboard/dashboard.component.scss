@@ -6,6 +6,11 @@
 border: none;
 background-color: #fafafa;
 color: black;
+cursor: pointer;
+>span {
+  vertical-align: middle;
+}
+
 }
 
 .button-look {
@@ -24,4 +29,5 @@ color: black;
   vertical-align: middle;
 
 }
+
 
