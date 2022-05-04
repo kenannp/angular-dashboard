@@ -14,9 +14,9 @@ export class CardFourComponent implements OnInit {
 
 
   list: ListItem[] = [
-    { name: 'test1', dno: '234234', status: 0, entrydate: '22.04.2022', amount: 3000 },
-    { name: 'test2', dno: '254664', status: 1, entrydate: '12.04.2022', amount: 4000 },
-    { name: 'test3', dno: '304734', status: 2, entrydate: '20.04.2022', amount: 5000 },
+    { name: 'test1', dno: '234234', status: 3, entrydate: '22.04.2022', amount: 3000 },
+    { name: 'test2', dno: '254664', status: 3, entrydate: '12.04.2022', amount: 4000 },
+    { name: 'test3', dno: '304734', status: 3, entrydate: '20.04.2022', amount: 5000 },
     { name: 'test4', dno: '400055', status: 3, entrydate: '28.04.2022', amount: 2000 }
   ]
 

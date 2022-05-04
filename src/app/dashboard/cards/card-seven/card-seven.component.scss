@@ -1,0 +1,105 @@
+@import '../../global-vars.scss';
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: left;
+}
+
+.chart-description {
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+
+.chart-count {
+  height: 3.2em;
+  width: 3.2em;
+  font-size: 32px;
+  text-align: center;
+  line-height: 3.2em;
+  border-radius: 50%;
+  color: white;
+}
+
+.chart-count-blue {
+
+  background: $blue;
+
+}
+
+.chart-count-darkblue {
+
+  background: $darkblue;
+
+}
+
+.chart-count-green {
+
+  background: $green;
+
+}
+
+.chart-count-purple {
+
+  background: $purple;
+
+}
+
+.chart-text {
+
+  padding-left: 2em;
+}
+
+.chart-diagram {
+  display: flex;
+  margin-top: 20px;
+
+
+
+}
+
+.chart-title {
+  font-weight: bold;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.chart-diagram-line {
+
+  height: 5px;
+
+}
+
+.chart-diagram-line-orange {
+  background: $orange;
+}
+
+.chart-diagram-line-blue {
+  background: $blue;
+}
+
+.chart-diagram-line-black {
+  background: $black;
+}
+
+.chart-diagram-label {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
