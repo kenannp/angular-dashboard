@@ -36,3 +36,19 @@ export var single = [
     }
     
   ]
+  export var singletwo =
+  [
+    {
+      "name": "Combined",
+      "value": 50
+    },
+    {
+      "name": "Product",
+      "value": 100
+    },
+    {
+      "name": "Service Item",
+      "value": 50
+    }
+    
+  ];

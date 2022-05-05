@@ -29,6 +29,7 @@ import {MatMomentDateModule} from "@angular/material-moment-adapter";
 import { CardFiveComponent } from './dashboard/cards/card-five/card-five.component';
 import { CardSixComponent } from './dashboard/cards/card-six/card-six.component';
 import { CardSevenComponent } from './dashboard/cards/card-seven/card-seven.component';
+import { CardEightComponent } from './dashboard/cards/card-eight/card-eight.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { CardSevenComponent } from './dashboard/cards/card-seven/card-seven.comp
     CardFourComponent,
     CardFiveComponent,
     CardSixComponent,
-    CardSevenComponent
+    CardSevenComponent,
+    CardEightComponent
 
 
 

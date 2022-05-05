@@ -4,11 +4,11 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Times New Roman', Times, serif; }
 a {color: $orange}
-.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle { border-color: $orange}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {border-color: $orange}
 .mat-radio-button.mat-accent .mat-radio-inner-circle {background-color: $orange; border-color: $orange}
 .mat-datepicker-toggle-default-icon path {fill: $orange}
 #datepicker > div {
     justify-content: flex-end !important ;
     align-items: flex-end !important;
  }
-
+ 
