@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import  { single } from '../../../data';
 import { Color, ScaleType } from '@swimlane/ngx-charts';
-
+import { DashboardService } from '../../../core/api/dashboard.service';
 
 @Component({
   selector: 'app-card-three',
@@ -10,7 +10,7 @@ import { Color, ScaleType } from '@swimlane/ngx-charts';
 })
 export class CardThreeComponent implements OnInit {
 
-  single: any[] = single
+  single: any[] = []
   view = void 0;
   @ViewChild('chart') chartReference: any
 
@@ -46,11 +46,10 @@ export class CardThreeComponent implements OnInit {
   
 
 
-  constructor() { }
+  constructor(private _dashboardService: DashboardService) { }
 
   ngOnInit(): void {
-    //@ts-ignore
-    this.view =undefined
+    this._dashboardService.getDeliveryReceipt().subscribe(result => { this.single = result })
   }
 
   
