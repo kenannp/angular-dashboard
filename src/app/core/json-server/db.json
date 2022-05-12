@@ -149,6 +149,21 @@
       "entrydate": "28.04.2022",
       "amount": 2000
     }
+  ],
+  "piechart": [
+    {
+      "name": "Combined",
+      "value": 50
+    },
+    {
+      "name": "Product",
+      "value": 100
+    },
+    {
+      "name": "Service Item",
+      "value": 50
+    }
+    
   ]
 
 }

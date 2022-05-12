@@ -31,6 +31,11 @@ export class DashboardService {
 
 
   }
+  getPieChart(): Observable<any> {
+    return this._httpClient.get('http://localhost:3000/piechart').pipe(map((result: any) => { return result }))
+
+
+  }
 
 
 }
