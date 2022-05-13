@@ -1,0 +1,42 @@
+<mat-card class="chart-card">
+  <div class="chart-description">
+    <div class="chart-count chart-count-blue">
+      {{totalCount}}
+    </div>
+
+    <div class="chart-text">
+      <div class="chart-title">
+
+        {{cardName}}
+      </div>
+      {{description}}
+    </div>
+
+
+
+  </div>
+
+
+  <div class="chart-diagram">
+    <div *ngIf="productValue" class="chart-diagram-item" style="width:{{calculatePercentage(productValue)}}%">
+      <div class="chart-diagram-label">Product</div>
+      <div class="chart-diagram-line chart-diagram-line-orange"></div>
+      <div class="chart-diagram-value">{{productValue}}</div>
+    </div>
+    <div *ngIf="bothValue" class="chart-diagram-item" style="width:{{calculatePercentage(bothValue)}}%">
+      <div class="chart-diagram-label">Both</div>
+      <div class="chart-diagram-line chart-diagram-line-blue"></div>
+      <div class="chart-diagram-value">{{bothValue}}</div>
+    </div>
+    <div *ngIf="serviceItemValue" class="chart-diagram-item" style="width:{{calculatePercentage(serviceItemValue)}}%">
+      <div class="chart-diagram-label">Service Item</div>
+      <div class="chart-diagram-line chart-diagram-line-black"></div>
+      <div class="chart-diagram-value">{{serviceItemValue}}</div>
+    </div>
+  </div>
+
+
+
+
+
+</mat-card>

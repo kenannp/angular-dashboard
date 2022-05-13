@@ -31,6 +31,8 @@ import { CardSixComponent } from './dashboard/cards/card-six/card-six.component'
 import { CardSevenComponent } from './dashboard/cards/card-seven/card-seven.component';
 import { CardEightComponent } from './dashboard/cards/card-eight/card-eight.component';
 import { HttpClientModule} from '@angular/common/http';
+import { SharedModule } from './shared/shared.module';
+
 
 
 @NgModule({
@@ -47,6 +49,7 @@ import { HttpClientModule} from '@angular/common/http';
     CardSixComponent,
     CardSevenComponent,
     CardEightComponent
+    
 
 
 
@@ -70,7 +73,8 @@ import { HttpClientModule} from '@angular/common/http';
     MatDatepickerModule,
     MatMomentDateModule,
     MatNativeDateModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
